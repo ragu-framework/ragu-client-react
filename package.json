@@ -1,0 +1,27 @@
+{
+  "name": "ragu-client-react",
+  "version": "0.0.1",
+  "description": "A React client for Ragu micro-frontends",
+  "main": "index.js",
+  "repository": "https://github.com/ragu-framework/ragu-client-react.git",
+  "author": "carlosmaniero@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^11.1.0",
+    "@types/jest": "^26.0.15",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "jest": "^26.6.0",
+    "react-dom": "^17.0.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3",
+    "wait-for-expect": "^3.0.2"
+  },
+  "scripts": {
+    "build": "tsc && cp package.json dist && cp README.md dist"
+  },
+  "dependencies": {
+    "ragu-dom": "^0.0.35",
+    "react": "^17.0.0"
+  }
+}

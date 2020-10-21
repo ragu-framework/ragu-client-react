@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "dist",
+    "jsx": "react"
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules", "**/*.spec.tsx"]
+}
