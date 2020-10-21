@@ -18,6 +18,7 @@
     "wait-for-expect": "^3.0.2"
   },
   "scripts": {
+    "clean": "tsc --build --clean",
     "test": "jest --coverage --runInBand --silent --verbose",
     "build": "tsc && cp package.json dist && cp README.md dist"
   },
