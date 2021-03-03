@@ -2871,10 +2871,10 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-ragu-dom@^0.0.35:
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/ragu-dom/-/ragu-dom-0.0.35.tgz#d5827df7e13dda3605181cc54969fbab28f80810"
-  integrity sha512-6x3zoH/aAKoZJyETUog5GWyG+mwSOVWurxdiAjYyF5ii9A/WsqNT65mLhR41u89SDy/ugHWOp/mfflPOBZ217A==
+ragu-dom@^0.0.59:
+  version "0.0.59"
+  resolved "https://registry.yarnpkg.com/ragu-dom/-/ragu-dom-0.0.59.tgz#684216759547d10ffc08366ef7eb7a7736473491"
+  integrity sha512-/8nbpn4g5zKBjMeSTHvE8neXysniDjPGkjXXjw4F3NBTPEgUQn5AqFz9R6QTVELmXVPV3hKx7Sf6YIYlGgLI4A==
 
 react-dom@^17.0.0:
   version "17.0.0"

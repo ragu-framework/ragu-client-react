@@ -22,7 +22,7 @@ describe('Test', () => {
     props: {},
     client: 'client_url',
     html: 'Hello, World',
-    hydrate: async  () => {
+    render: async  () => {
     }
   };
 
@@ -90,7 +90,7 @@ describe('Test', () => {
     it('hydrates the content', async () => {
       const componentResponseWithHydration: Component<any, any> = {
         ...componentResponse,
-        hydrate: async  (el) => {
+        render: async  (el) => {
           el.innerHTML = 'Hydrated hello!'
         }
       };
@@ -171,7 +171,7 @@ describe('Test', () => {
       const loadStub = jest.fn(() => Promise.resolve({
           ...componentResponse,
 
-          hydrate: () => new Promise(async (resolve) => {
+          render: () => new Promise(async (resolve) => {
             expect(onHydrateStub).not.toBeCalled()
 
             resolve();

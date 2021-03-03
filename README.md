@@ -1,6 +1,6 @@
 <p align="center" style="color: #343a40">
   <p align="center" >
-    <img src="repository-assets/logo.png" alt="Ragu" align="center">
+    <img src="repository-assets/banner.png" alt="Ragu" align="center" style="max-width: 100%">
   </p>
   <h1 align="center">Ragu Client React</h1>
 </p>
