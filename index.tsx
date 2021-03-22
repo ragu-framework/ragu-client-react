@@ -27,6 +27,18 @@ export class RaguComponent extends React.Component<RaguComponentProps, {}>{
   }
 
   componentDidMount() {
+    this.registerRaguDom();
+  }
+
+  shouldComponentUpdate(nextProps: Readonly<RaguComponentProps>, nextState: Readonly<{}>, nextContext: any): boolean {
+    if (this.props.src !== nextProps.src) {
+      this.raguDOMComponent.disconnectComponent();
+      return true;
+    }
+    return false;
+  }
+
+  private registerRaguDom() {
     if (this.props.prefetchResponse) {
       this.ref.current.innerHTML = this.props.prefetchResponse;
     }
@@ -47,9 +59,8 @@ export class RaguComponent extends React.Component<RaguComponentProps, {}>{
     this.raguDOMComponent.fetchComponent(this.props.src);
   }
 
-  shouldComponentUpdate(nextProps: Readonly<RaguComponentProps>, nextState: Readonly<{}>, nextContext: any): boolean {
-    this.props.src !== nextProps.src && this.raguDOMComponent.fetchComponent(nextProps.src);
-    return false;
+  componentDidUpdate() {
+    this.registerRaguDom();
   }
 
   componentWillUnmount() {
