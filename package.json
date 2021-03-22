@@ -1,6 +1,6 @@
 {
   "name": "ragu-client-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A React client for Ragu micro-frontends",
   "main": "index.js",
   "repository": "https://github.com/ragu-framework/ragu-client-react.git",
